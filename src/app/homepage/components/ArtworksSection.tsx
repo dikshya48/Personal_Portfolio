@@ -6,12 +6,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 // Add your artwork images to public/assets/images/artworks/ as artwork-1.jpg through artwork-6.jpg (or .png)
 // Update descriptions below for each piece
 const artworks = [
-  { id: 1, src: '/assets/images/artworks/artwork-1.jpg', description: 'Describe your first artwork here' },
-  { id: 2, src: '/assets/images/artworks/artwork-2.jpg', description: 'Describe your second artwork here' },
-  { id: 3, src: '/assets/images/artworks/artwork-3.jpg', description: 'Describe your third artwork here' },
-  { id: 4, src: '/assets/images/artworks/artwork-4.jpg', description: 'Describe your fourth artwork here' },
-  { id: 5, src: '/assets/images/artworks/artwork-5.jpg', description: 'Describe your fifth artwork here' },
-  { id: 6, src: '/assets/images/artworks/artwork-6.jpg', description: 'Describe your sixth artwork here' },
+  { id: 1, src: '/assets/images/artworks/artwork-1.png', description: 'Stone house: an ancient warmth' },
+  { id: 2, src: '/assets/images/artworks/artwork-2.png', description: 'The Child: Small wonders, big world' },
+  { id: 3, src: '/assets/images/artworks/artwork-3.png', description: 'Daydreaming' },
+  { id: 4, src: '/assets/images/artworks/artwork-4.png', description: 'Rust turning into life' },
+  { id: 5, src: '/assets/images/artworks/artwork-5.png', description: 'Little painter: capturing what her heart sees' },
+  { id: 6, src: '/assets/images/artworks/artwork-6.png', description: 'Dobby: an unforgettable character' },
 ];
 
 const ArtworksSection = () => {
@@ -74,7 +74,7 @@ const ArtworksSection = () => {
                 alt={`Artwork ${zoomedArt.id}`}
                 className="w-full h-auto max-h-[85vh] object-contain rounded-lg border border-white/10"
               />
-              <p className="mt-4 text-center text-muted-foreground text-sm">{zoomedArt.description}</p>
+              <p className="mt-4 text-center text-muted-foreground text-base md:text-lg w-full">{zoomedArt.description}</p>
               <button
                 onClick={() => setZoomedArt(null)}
                 className="absolute -top-12 right-0 w-10 h-10 rounded-full border border-white/20 text-white hover:bg-white/10 flex items-center justify-center transition-colors"
@@ -130,7 +130,7 @@ const ArtworkBox = ({
               <path d="M12 19l7-7 3 3-7 7-3-3z" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            <span className="text-xs text-center px-4">Add artwork-{artwork.id}.jpg</span>
+            <span className="text-xs text-center px-4">Add artwork-{artwork.id}.jpg or .png</span>
           </div>
         )}
       </div>
@@ -143,9 +143,9 @@ const ArtworkBox = ({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="absolute inset-0 bg-black/75 flex items-end p-4"
+            className="absolute inset-0 bg-black/75 flex items-center justify-center p-4"
           >
-            <p className="text-sm md:text-base text-foreground/95 line-clamp-3">
+            <p className="text-base md:text-lg text-foreground/95 line-clamp-3 text-center">
               {artwork.description}
             </p>
           </motion.div>
