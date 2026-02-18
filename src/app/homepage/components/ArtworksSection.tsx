@@ -152,10 +152,6 @@ const ArtworkBox = ({
         )}
       </AnimatePresence>
 
-      {/* Click hint - top right when hovered */}
-      <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
-        <span className="text-xs text-primary/80 bg-black/50 px-2 py-1 rounded">Click to zoom</span>
-      </div>
     </motion.div>
   );
 };
