@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 // Update this with your email address
-const EMAIL = 'dikshyagiri@example.com';
+const EMAIL = 'dgiri@caldwell.edu';
 
 const floatingEmojis = ['✉️', '💬', '✨', '🚀', '💡', '🎨'];
 
