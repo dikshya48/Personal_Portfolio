@@ -27,10 +27,10 @@ const ArtworksSection = () => {
           className="text-center mb-12"
         >
           <h2 className="font-fraunces text-3xl md:text-4xl font-semibold text-foreground mb-3">
-            Pencil Sketches & Artwork
+            My Artwork
           </h2>
           <p className="text-muted-foreground text-lg max-w-md mx-auto">
-            A selection of hand-drawn sketches and illustrations
+            Few of my of hand-drawn sketches 
           </p>
         </motion.div>
 
