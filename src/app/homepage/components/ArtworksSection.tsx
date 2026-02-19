@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// Add your artwork images to public/assets/images/artworks/ as artwork-1.jpg through artwork-6.jpg (or .png)
+// Add your artwork images to public/assets/images/artworks/ as artwork-1 through artwork-6 (jpg or png)
 // Update descriptions below for each piece
 const artworks = [
   { id: 1, src: '/assets/images/artworks/artwork-1.png', description: 'Stone house: an ancient warmth' },
